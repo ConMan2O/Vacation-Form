@@ -2,7 +2,7 @@
 import express from 'express';
 // ===== 2. CREATE APP + PORT =====
 const app = express();
-const PORT = 3000; // CHANGE if quiz gives a port
+const PORT = 3006;
 // Array to store form submissions (in memory)
 const submissions = [];
 // ===== 3. MIDDLEWARE (must be BEFORE routes) =====
@@ -25,3 +25,4 @@ res.sendFile(`${import.meta.dirname}/views/contact.html`);
 
 app.get('/confirm', (req, res) => {
 res.sendFile(`${import.meta.dirname}/views/confirm.html`);
+});
