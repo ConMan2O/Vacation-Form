@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+#banner{
+    background-image: url("../images/beach-banner.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.error{
+    display: none;
+    color: red;
+}
+
+body {
+    background-color: #e8f4f8;  
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;          
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;         
+    box-shadow: 0 4px 12px rgb(39, 38, 38);
+}
+
+#vacation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.full, #vacation-form button {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+}
+
+select, input[type="date"], input[type="number"] {
+    width: 100%;
+    padding: .6rem;
+    border: 1px solid #999;
+    border-radius: .25rem;
+}
+
+button {
+    padding: .75rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 1.7rem;
+    font-size: 1rem;
+    justify-self: center;
+    width: 200px;
+}
+
+@media (max-width: 600px) {
+    #main {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #vacation-form {
+    grid-template-columns: 1fr;
+}
+}

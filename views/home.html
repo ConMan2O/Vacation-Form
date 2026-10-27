@@ -15,7 +15,55 @@
     <script src="scripts/vacation.js" defer></script>
     
 </head>
+
 <body>
+    
+    <div id="main">
+        <header id="banner">
+            <h1>Book Your Dream Vacation</h1>
+        </header>
+
+        <form id="vacation-form" action="/submit" method ="post">
+
+            
+
+
+            <div class="field full">
+                <label for="destination" class="destination">Destination
+                    <select id="destination" name="destination">
+                        <option value="none">Choose a Destination</option>
+                        <option value ="bali">Bali, Indonesia</option>
+                        <option value ="paris">Paris, France</option>
+                        <option value ="tokyo">Tokyo, Japan</option>
+                        <option value ="maldives">Maldives</option>
+                        <option value ="nyc">New York City, USA</option>
+                    </select>
+                    <span class="error" id="destination-error">Please Select A Destination</span>
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="date">Departure Date</label>
+                <input type="date" id="date" name="date">
+                <span class="error" id="error-date">Please Select a Departure Date</span>
+            </div>
+
+            <div class="field">
+                <label for="number">Number of Travelers</label>
+                <input type="number" id="number" name="number">
+                <span class="error" id="error-number">At Least One Traveler is Required</span>
+            </div>
+
+            <button type="submit">Find My Vacation</button>
+
+        
+
+
+
+        </form>
+    </div>
+
+
     
 </body>
 </html>
